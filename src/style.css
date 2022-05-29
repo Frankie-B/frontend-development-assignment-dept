@@ -1,0 +1,41 @@
+@import './styles/nav.scss';
+@import './styles/hero.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;700&display=swap');
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.4em;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 20em) {
+  body {
+    font-size: calc(1em + (1.3125 - 1) * ((100vw - 20em) / (80 - 20)));
+    line-height: calc(1.4em + (1.8 - 1.4) * ((100vw - 20em) / (80 - 20)));
+  }
+}
+
+@media (min-width: 80em) {
+  body {
+    font-size: 1.3125em;
+    line-height: 1.8em;
+  }
+}
+
+#app {
+  font-family: 'Teko', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  position: relative;
+}
+
+.debug {
+  border: 1px solid red;
+}

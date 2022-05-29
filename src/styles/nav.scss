@@ -1,0 +1,63 @@
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 36px;
+  top: 29px;
+  width: 96%;
+}
+
+.logo__image {
+  width: 150px;
+  height: 45px;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: flex-end;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  margin-right: 16px;
+  width: 80px;
+}
+
+#navIcon {
+  align-self: auto;
+}
+
+#navIcon > span {
+  display: block;
+  border-radius: 999px;
+  background-color: #0c0c0c;
+  height: 2px;
+  width: 28px;
+}
+
+#navIcon > span:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+#navIcon,
+#navIcon > span {
+  transition: all 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  .nav__container {
+    left: 0;
+    top: 0;
+    width: 820px;
+    height: 112px;
+    padding: 0 16px;
+  }
+
+  .logo__image {
+    width: 50px;
+    height: 29px;
+  }
+}
