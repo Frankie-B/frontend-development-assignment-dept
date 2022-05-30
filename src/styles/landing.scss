@@ -13,6 +13,7 @@
 .landing__img {
   display: block;
   width: 100%;
+  max-width: 2238px;
 }
 
 .navIcon__container {
@@ -66,27 +67,36 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-  color: #fff;
   gap: 10px;
-
-  position: absolute;
-  width: 205px;
-  height: 110px;
-  right: 142px;
-  top: 1228px;
-  text-transform: uppercase;
-  transform: translate(-50%, -50%);
-
   background: #0c0c0c;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: absolute;
+  width: 270px;
+  height: 85px;
+  left: 1690px;
+  top: 1180px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translate(-50%, -50%);
 }
 
 .landing__link:hover {
   background-color: #fff;
   color: #0c0c0c;
   transition: all 0.4s ease-in-out;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
+  .landing__wrapper {
+    padding-top: 32px;
+    height: 100%;
+  }
+
+  .landing__img {
+    margin-top: 56px;
+  }
 }

@@ -4,12 +4,21 @@
 <head>
   <meta charset="UTF-8" />
   <!-- <link rel="icon" type="image/svg+xml" href="favicon.svg" /> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/reset.css">
-  <link rel="stylesheet" href="./style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <meta name="viewport" case="width=device-width, initial-scale=1.0" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.
+  js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
   <script type="module" src="/main.js" defer></script>
   <title>The case frontend developers</title>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -27,8 +36,69 @@
       <img src="./images/hero-img.jpg" alt="landing image" class="landing__img" />
       <a href="#" class="landing__link">View Case</a>
     </div>
-    <div class="filters__wrapper">
-      <select name="industry" id="industry" class="filter__industry"></select>
+    <div class="case__container">
+      <div class="filters__wrapper">
+        <div class="dropdown">
+          <button class="btn btn-lg btn-secondary dropdown-toggle text-dark  bg-transparent" type="button"
+            id="filterByIndustry" data-toggle="dropdown" aria-expanded="false">
+            <span class="grey__text">in</span> all industries
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">all industries</a>
+            <a class="dropdown-item" href="#">advertising</a>
+            <a class="dropdown-item" href="#">branding</a>
+            <a class="dropdown-item" href="#">commerce</a>
+            <a class="dropdown-item" href="#">content</a>
+            <a class="dropdown-item" href="#">data & intelligence</a>
+            <a class="dropdown-item" href="#">digital marketing</a>
+            <a class="dropdown-item" href="#">marketing</a>
+            <a class="dropdown-item" href="#">strategy</a>
+            <a class="dropdown-item" href="#">technology</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-lg btn-secondary dropdown-toggle text-dark bg-transparent" type="button"
+            id="filterByWork" data-toggle="dropdown" aria-expanded="false">
+            <span class="grey__text">Show me</span> all work
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">all work</a>
+            <a class="dropdown-item" href="#">b2b</a>
+            <a class="dropdown-item" href="#">banks, finance & insurance</a>
+            <a class="dropdown-item" href="#">consumer goods & services</a>
+            <a class="dropdown-item" href="#">energy & utilities</a>
+            <a class="dropdown-item" href="#">fashion and lifestyle</a>
+            <a class="dropdown-item" href="#">health & life science</a>
+            <a class="dropdown-item" href="#">agriculture & food industry</a>
+            <a class="dropdown-item" href="#">manufacturing industry</a>
+            <a class="dropdown-item" href="#">public sector non-profit</a>
+            <a class="dropdown-item" href="#">travel & leisure industry</a>
+            <a class="dropdown-item" href="#">retail & commerce</a>
+            <a class="dropdown-item" href="#">technology, media & communication</a>
+            <a class="dropdown-item" href="#">web3</a>
+          </div>
+        </div>
+      </div>
+      <div class="case__wrapper">
+        <div class="case__box">
+          <img src="./images/summer-island.jpg" alt="" class="case__img">
+          <h3 class="case__name">Bol.com</h3>
+          <h2 class="case__tagline">A summer island in the Netherlands</h2>
+          <div class="case__link__wrapper">
+            <div class="arrow_left"></div>
+            <a href="#" class="case__link">View Case</a>
+          </div>
+        </div>
+        <div class="case__box">
+          <img src="./images/banking.jpg" alt="" class="case__img">
+          <h3 class="case__name">Kempen</h3>
+          <h2 class="case__tagline">Not some average banking website</h2>
+          <div class="case__link__wrapper">
+            <div class="arrow_left"></div>
+            <a href="#" class="case__link">View Case</a>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </body>
