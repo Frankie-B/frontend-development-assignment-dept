@@ -14,27 +14,22 @@
 
 <body>
   <main id="app">
-    <nav class="nav__container">
-      <a class="navbar__link" href="index.html">
-        <img src="./images/logo-black.svg" alt="logo" class="logo__image" />
-      </a>
-      <div class="nav__menu">
-        <h3 class="menu__heading">Menu</h3>
-        <div class="nav__icon" id="navIcon">
-          <span class="nav__line"></span>
-          <span class="nav__line"></span>
+    <div class="landing__wrapper">
+      <img src="./images/logo-black.svg" alt="logo image" class="logo__img">
+      <div class="navIcon__container" id="navMenu">
+        <h3 class="menu__text">Menu</h3>
+        <div class="line__container">
+          <span class="navIcon__line"></span>
+          <span class="navIcon__line"></span>
         </div>
       </div>
-    </nav>
-    <section class="hero__container hero">
-      <img src="./images/hero-img.jpg" alt="background image" class="hero__bg">
-      <hr class="hero__spacer">
-      <div class="text__container">
-        <h1 class="hero__title">Work</h1>
-        <a href="#" class="hero__link">View Case</a>
-      </div>
-    </section>
-    <section class="section white"></section>
+      <hr class="line__black">
+      <img src="./images/hero-img.jpg" alt="landing image" class="landing__img" />
+      <a href="#" class="landing__link">View Case</a>
+    </div>
+    <div class="filters__wrapper">
+      <select name="industry" id="industry" class="filter__industry"></select>
+    </div>
   </main>
 </body>
 
