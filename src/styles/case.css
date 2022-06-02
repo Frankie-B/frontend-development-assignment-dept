@@ -118,3 +118,50 @@
   height: 766px;
   width: 815px;
 }
+
+@media screen and (max-width: 768px) {
+  .case__container {
+    border: 1px solid red;
+    width: 100vw;
+  }
+
+  .filters__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-right: 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  .case__box {
+    justify-content: space-between;
+    width: 337px;
+    height: 100%;
+  }
+
+  .case__name {
+    font-size: 12px;
+    margin: 12px 0;
+  }
+
+  .case__tagline {
+    font-size: 2rem;
+  }
+
+  .case__link,
+  .arrow_left,
+  .arrow_right {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .florensis__bg {
+    width: 337px;
+    height: 286px;
+  }
+
+  .text__only .second__text {
+    margin-bottom: 0;
+  }
+}
