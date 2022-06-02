@@ -90,7 +90,6 @@
 
 @media screen and (max-width: 768px) {
   .nav__container {
-    border: 1px solid green;
     display: flex;
     align-items: center;
     height: 100%;
@@ -98,7 +97,7 @@
   .navIcon__container {
     justify-self: flex-end;
     display: flex;
-    margin-right: 16px;
+    margin-right: 1rem;
     top: 40px;
     width: 5%;
   }
@@ -109,7 +108,7 @@
   }
 
   .menu__text {
-    margin-right: 16px;
+    margin-right: 1rem;
     font-size: 1.3rem;
   }
 
@@ -131,8 +130,8 @@
     position: absolute;
     width: 90%;
     height: 55px;
-    left: 16px;
-    right: 16px;
+    left: 1rem;
+    right: 1rem;
     top: 354px;
     font-size: 1.2rem;
     background: #0c0c0c;

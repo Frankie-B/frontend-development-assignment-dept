@@ -37,15 +37,28 @@
   justify-content: space-evenly;
   align-items: flex-start;
   width: inherit;
-  padding-top: 32px;
+  padding-top: 2rem;
   padding-bottom: 50px;
 }
 
 .info__heading.copyright {
 }
 
-@media screen and (min-width: 20em) {
+@media screen and (max-width: 768px) {
   .footer__container {
-    width: 85%;
+    width: 410px;
+    height: 663px;
+  }
+  .footer__logo {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .footer__container {
+    width: 100vw;
+  }
+
+  .nav__footer {
+    flex-direction: column;
   }
 }

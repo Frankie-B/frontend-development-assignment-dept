@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  padding: 1rem;
   height: 100%;
   width: 100%;
 }
@@ -13,19 +13,34 @@
   font-size: 4.688rem;
   text-transform: uppercase;
   font-weight: 400;
-  margin: 32px auto;
+  margin: 2rem auto;
 }
 
 .clients__text {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.7rem;
   line-height: 2.7rem;
-  margin: 32px auto;
+  margin: 2rem auto;
+  width: 47%;
 }
 
 .clients__img {
   display: block;
-  margin: 32px auto;
+  margin: 2rem auto;
   height: 80%;
   width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .clients__heading {
+    line-height: 43px;
+  }
+  .clients__text {
+    font-size: 1.2rem;
+    line-height: 27px;
+    text-align: center;
+    margin: 0 auto;
+    width: 358px;
+    height: 135px;
+  }
 }
