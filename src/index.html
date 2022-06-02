@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <!-- <link rel="icon" type="image/svg+xml" href="favicon.svg" /> -->
-  <meta name="viewport" case="width=device-width, initial-scale=1.0" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.
   js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -24,14 +24,16 @@
 <body>
   <main id="app">
     <div class="landing__wrapper">
-      <img src="./images/logo-black.svg" alt="logo image" class="logo__img">
-      <div class="navIcon__container" id="navMenu">
-        <h3 class="menu__text">Menu</h3>
-        <div class="line__container">
-          <span class="navIcon__line"></span>
-          <span class="navIcon__line"></span>
+      <header class="nav__container" id="navMenu">
+        <img src="./images/logo-black.svg" alt="logo image" class="logo__img">
+        <div class="navIcon__container">
+          <h3 class="menu__text">Menu</h3>
+          <div class="line__container">
+            <span class="navIcon__line"></span>
+            <span class="navIcon__line"></span>
+          </div>
         </div>
-      </div>
+      </header>
       <hr class="line__black">
       <img src="./images/hero-img.jpg" alt="landing image" class="landing__img" />
       <a href="#" class="landing__link">View Case</a>
@@ -79,27 +81,268 @@
           </div>
         </div>
       </div>
-      <div class="case__wrapper">
+      <section class="case__wrapper">
         <div class="case__box">
-          <img src="./images/summer-island.jpg" alt="" class="case__img">
-          <h3 class="case__name">Bol.com</h3>
-          <h2 class="case__tagline">A summer island in the Netherlands</h2>
-          <div class="case__link__wrapper">
-            <div class="arrow_left"></div>
-            <a href="#" class="case__link">View Case</a>
+          <img src="./images/summer-island.jpg" alt="" class="case__img" loading="lazy">
+          <div class="case__text__wrapper">
+            <h3 class="case__name">Bol.com</h3>
+            <h2 class="case__tagline">A summer island in the Netherlands</h2>
+            <div class="case__link__container">
+              <div class="arrow_left"></div>
+              <a href="#" class="case__link">View Case</a>
+            </div>
           </div>
         </div>
         <div class="case__box">
-          <img src="./images/banking.jpg" alt="" class="case__img">
-          <h3 class="case__name">Kempen</h3>
-          <h2 class="case__tagline">Not some average banking website</h2>
-          <div class="case__link__wrapper">
+          <img src="./images/banking.jpg" alt="" class="case__img" loading="lazy">
+          <div class="case__text__wrapper">
+            <h3 class="case__name">Kempen</h3>
+            <h2 class="case__tagline">Not some average banking website</h2>
+            <div class="case__link__container">
+              <div class="arrow_left"></div>
+              <a href="#" class="case__link">View Case</a>
+            </div>
+          </div>
+        </div>
+        <div class="case__box">
+          <img src="./images/phillips.jpg" alt="" class="case__img" loading="lazy">
+          <div class="case__text__wrapper">
+            <h3 class="case__name">Phillips</h3>
+            <h2 class="case__tagline">Beautiful design meets innovative technology</h2>
+            <div class="case__link__container">
+              <div class="arrow_left"></div>
+              <a href="#" class="case__link">View Case</a>
+            </div>
+          </div>
+        </div>
+        <div class="case__box">
+          <img src="./images/musem.jpg" alt="" class="case__img" loading="lazy">
+          <div class="case__text__wrapper">
+            <h3 class="case__name">Gemeentemesuem</h3>
+            <h2 class="case__tagline">A 100 years of Mondriaan & De stijl</h2>
+            <div class="case__link__container">
+              <div class="arrow_left"></div>
+              <a href="#" class="case__link">View Case</a>
+            </div>
+          </div>
+        </div>
+        <div class="case__box flornsis">
+          <div class="florensis__bg"></div>
+          <div class="case__text__wrapper">
+            <h3 class="case__name">Flornsis</h3>
+            <h2 class="case__tagline">Rethinking the entire online ecosystem</h2>
+            <div class="case__link__container">
+              <div class="arrow_left"></div>
+              <a href="#" class="case__link">View Case</a>
+            </div>
+          </div>
+        </div>
+        <div class="case__box text__only">
+          <div class="case__text__wrapper">
+            <h3 class="case__name">Microsoft</h3>
+            <h2 class="case__tagline">Tapping into Ireland's unique gaming culture
+              and <br> bringing a fresh flavour to their Xbox social media<br>channels</h2>
+            <div class="case__link__container">
+              <div class="arrow_left"></div>
+              <a href="#" class="case__link">View Case</a>
+            </div>
+          </div>
+          <div class="case__text__wrapper second__text">
+            <h3 class="case__name">O'Neill</h3>
+            <h2 class="case__tagline">Integrating existing content into O'Neills's
+              new e-<br> commerce platform</h2>
+            <div class="case__link__container">
+              <div class="arrow_left"></div>
+              <a href="#" class="case__link">View Case</a>
+            </div>
+          </div>
+        </div>
+        <div class="case__box">
+          <img src="./images/lighting.jpg" alt="" class="case__img" loading="lazy">
+          <div class="case__text__wrapper">
+            <h3 class="case__name">Be Lighting</h3>
+            <h2 class="case__tagline">Delivering clarity on a global scale</h2>
+            <div class="case__link__container">
+              <div class="arrow_left"></div>
+              <a href="#" class="case__link">View Case</a>
+            </div>
+          </div>
+        </div>
+        <div class="case__box">
+          <img src="./images/tui.jpg" alt="" class="case__img" loading="lazy">
+          <div class="case__text__wrapper">
+            <h3 class="case__name">TUI</h3>
+            <h2 class="case__tagline">Swipe to find your next holiday destination</h2>
+            <div class="case__link__container">
+              <div class="arrow_left"></div>
+              <a href="#" class="case__link">View Case</a>
+            </div>
+          </div>
+        </div>
+        <div class="case__box text__only">
+          <div class="case__text__wrapper">
+            <h3 class="case__name">Microsoft</h3>
+            <h2 class="case__tagline">Tapping into Ireland's unique gaming culture
+              and <br> bringing a fresh flavour to their Xbox social media<br>channels</h2>
+            <div class="case__link__container">
+              <div class="arrow_left"></div>
+              <a href="#" class="case__link">View Case</a>
+            </div>
+          </div>
+          <div class="case__text__wrapper second__text">
+            <h3 class="case__name">O'Neill</h3>
+            <h2 class="case__tagline">Integrating existing content into O'Neills's
+              new e-<br> commerce platform</h2>
+            <div class="case__link__container">
+              <div class="arrow_left"></div>
+              <a href="#" class="case__link">View Case</a>
+            </div>
+          </div>
+        </div>
+        <div class="case__box flornsis">
+          <div class="florensis__bg"></div>
+          <div class="case__text__wrapper">
+            <h3 class="case__name">Flornsis</h3>
+            <h2 class="case__tagline">Rethinking the entire online ecosystem</h2>
+            <div class="case__link__container">
+              <div class="arrow_left"></div>
+              <a href="#" class="case__link">View Case</a>
+            </div>
+          </div>
+        </div>
+        <div class="case__box">
+          <img src="./images/chocomel.jpg" alt="" class="case__img" loading="lazy">
+          <div class="case__text__wrapper">
+            <h3 class="case__name">Chocomel</h3>
+            <h2 class="case__tagline">A campaign for the limited edition letter packs</h2>
+            <div class="case__link__container">
+              <div class="arrow_left"></div>
+              <a href="#" class="case__link">View Case</a>
+            </div>
+          </div>
+        </div>
+        <div class="case__box">
+          <img src="./images/jbl.jpg" alt="" class="case__img" loading="lazy">
+          <div class="case__text__wrapper">
+            <h3 class="case__name">JBL</h3>
+            <h2 class="case__tagline">Live like a champion with Jerome Boateng</h2>
+            <div class="case__link__container">
+              <div class="arrow_left"></div>
+              <a href="#" class="case__link">View Case</a>
+            </div>
+          </div>
+        </div>
+        <div class="case__box">
+          <img src="./images/zalando.jpg" alt="" class="case__img" loading="lazy">
+          <div class="case__text__wrapper">
+            <h3 class="case__name">Zalando</h3>
+            <h2 class="case__tagline">Innovative SEO and content strategy for Zalando</h2>
+            <div class="case__link__container">
+              <div class="arrow_left"></div>
+              <a href="#" class="case__link">View Case</a>
+            </div>
+          </div>
+        </div>
+        <div class="case__box">
+          <img src="./images/biblioteek.jpg" alt="" class="case__img" loading="lazy">
+          <div class="case__text__wrapper">
+            <h3 class="case__name">Koninklijke Bibliotheek</h3>
+            <h2 class="case__tagline">The search for the most inflential book ever</h2>
+            <div class="case__link__container">
+              <div class="arrow_left"></div>
+              <a href="#" class="case__link">View Case</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="testimonials">
+      <div class="testimonial__wrapper">
+        <h1 class="testimonial__header">"Dept helped us tell our stroy through a bold new identity and a robust online
+          <br>
+          experience. To the tone of 60% growth in online bookings in just one month"
+        </h1>
+        <h3 class="testimonial__subheading">Mattijs Ten Brink - CEO, Transavia</h3>
+      </div>
+      <div class="case__box">
+        <img src="./images/liberty.jpg" alt="" class="case__img" loading="lazy">
+        <div class="case__text__wrapper">
+          <h3 class="case__name">Liberty Global</h3>
+          <h2 class="case__tagline">Delivering Complex commerce solutions</h2>
+          <div class="case__link__container">
             <div class="arrow_left"></div>
             <a href="#" class="case__link">View Case</a>
           </div>
         </div>
       </div>
-    </div>
+      <div class="case__box">
+        <img src="./images/arla.jpg" alt="" class="case__img" loading="lazy">
+        <div class="case__text__wrapper">
+          <h3 class="case__name">Arla</h3>
+          <h2 class="case__tagline">Swipe to find your next holiday destination</h2>
+          <div class="case__link__container">
+            <div class="arrow_left"></div>
+            <a href="#" class="case__link">View Case</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="clients__container">
+      <h2 class="clients__heading">
+        clients
+      </h2>
+      <p class="clients__text">We value a great working relationship with our clients above all else. It’s<br>why they
+        often come to our parties. It’s
+        also why we’re able to challenge <br> and inspire them to reach for the stars.</p>
+      <div class="img__container">
+        <img src="./images/clients.png" alt="" class="clients__img">
+      </div>
+    </section>
+    <section class="contact__container">
+      <div class="heading__container">
+        <h2 class="contact__heading">Question?<br>We are here<br>to help!</h2>
+      </div>
+      <form action="" class="form__group">
+        <div class="input__container">
+          <div class="input__group">
+            <label for="name" class="input__label">Name</label>
+            <input type="text" class="form__input name">
+          </div>
+          <div class="input__group">
+            <label for="email" class="input__label">Email</label>
+            <input type="email" class="form__input email" required>
+          </div>
+        </div>
+        <div class="message__group">
+          <label for="message" class="input__label massage">message</label>
+          <textarea name="" id="" cols="30" rows="10" class="form__input message"></textarea>
+        </div>
+        <button type="submit" class="form__btn">Send</button>
+      </form>
+    </section>
+    <footer class="footer__container">
+      <nav class="nav__footer">
+        <img src="./images/logo__white.svg" alt="" class="footer__logo">
+        <ul class="nav__items">
+          <li class="nav__link">Work</li>
+          <li class="nav__link">Services</li>
+          <li class="nav__link">Stories</li>
+          <li class="nav__link">About</li>
+          <li class="nav__link">Careers</li>
+          <li class="nav__link">Contact</li>
+        </ul>
+        <div class="socials__container">
+          <!-- add social media -->
+        </div>
+      </nav>
+      <hr class="grey__line">
+      <div class="info__container">
+        <h3 class="info__heading">Address</h3>
+        <h3 class="info__heading">Vat number</h3>
+        <h3 class="info__heading">terms</h3>
+        <h3 class="info__heading copyright">copyright</h3>
+      </div>
+    </footer>
   </main>
 </body>
 

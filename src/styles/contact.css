@@ -1,0 +1,81 @@
+.contact__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 649px;
+  width: 80%;
+}
+
+.contact__heading {
+  font-weight: 400;
+  font-size: 6rem;
+  justify-self: flex-start;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 16px;
+  width: 942px;
+}
+
+.input__container {
+  display: flex;
+  width: 100%;
+}
+
+.input__group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: no-wrap;
+  width: 100%;
+}
+
+.form__input {
+  all: unset;
+  border-bottom: 2px solid #dddddd;
+  margin-bottom: 32px;
+  width: 80%;
+}
+
+.form__input.name,
+.form__input.email {
+  width: 80%;
+}
+
+.message__group {
+  display: flex;
+  flex-direction: column;
+  height: 178px;
+  width: 45%;
+}
+
+.input__label {
+  font-size: 1.3rem;
+}
+
+.input__label.massage {
+  align-self: flex-start;
+}
+
+.form__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #1a18f7;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 32px;
+  width: 231px;
+  height: 85px;
+  text-transform: uppercase;
+  text-decoration: none;
+}

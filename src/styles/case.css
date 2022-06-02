@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 72px;
-  width: 100%;
+  padding: 0 16px;
 }
 
 .filters__wrapper {
@@ -11,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 3rem;
+  margin-right: 7rem;
   margin-top: 6rem;
   margin-bottom: 6rem;
   height: 70px;
@@ -37,53 +36,59 @@
   font-size: 1.3rem;
   font-weight: 600;
   line-height: 43px;
-  max-width: 45ch;
-
   width: 100%;
 }
 
 .case__wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 36px;
-  height: 100%;
-  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 4px 32px;
 }
 
 .case__box {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  height: 100%;
+  margin: 0 auto;
+  height: 933px;
+  width: 815px;
 }
 
-.case__img {
-  object-fit: fill;
-  width: 95%;
+.case__text__wrapper {
+  display: flex;
+  align-self: start;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  margin: 24px 0;
 }
 
 .case__name {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
+  font-size: 1.3rem;
   font-weight: 700;
-  font-size: 1.7rem;
+
   line-height: 17px;
   margin: 24px 0;
-
   color: #939393;
   text-transform: uppercase;
 }
 
-.case__link__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.case__tagline {
+  font-size: 2.7rem;
+}
+
+.case__link {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3rem;
+  font-weight: 700;
   text-transform: uppercase;
-  margin: 24px 0;
-  width: 101px;
+  width: 100%;
 }
 
 .arrow_left {
@@ -94,4 +99,22 @@
   border-bottom: 7px solid transparent;
   border-left: 15px solid blue;
   margin-right: 16px;
+}
+
+.text__only .case__text__wrapper {
+  justify-self: flex-start;
+  border-top: 1px solid #939393;
+  width: 100%;
+}
+
+.text__only .second__text {
+  border-bottom: 1px solid #939393;
+  margin-bottom: 15rem;
+}
+
+.florensis__bg {
+  background: url('../images/hero-img.jpg') no-repeat center center;
+  background-size: cover;
+  height: 766px;
+  width: 815px;
 }

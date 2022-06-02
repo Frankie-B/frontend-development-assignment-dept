@@ -13,7 +13,6 @@
 .landing__img {
   display: block;
   width: 100%;
-  max-width: 2238px;
 }
 
 .navIcon__container {
@@ -53,13 +52,12 @@
 }
 
 .line__black {
-  position: absolute;
-  width: 1762px;
+  border: 1px solid #0e0e0e;
   height: 0px;
   left: 36px;
+  position: absolute;
   top: 85.25px;
-
-  border: 1px solid #0e0e0e;
+  width: 1762px;
 }
 
 .landing__link {
@@ -86,17 +84,58 @@
 .landing__link:hover {
   background-color: #fff;
   color: #0c0c0c;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
   text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
-  .landing__wrapper {
-    padding-top: 32px;
+@media screen and (max-width: 768px) {
+  .nav__container {
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
     height: 100%;
+  }
+  .navIcon__container {
+    justify-self: flex-end;
+    display: flex;
+    margin-right: 16px;
+    top: 40px;
+    width: 5%;
+  }
+
+  .logo__img {
+    height: 15px;
+    width: 53px;
+  }
+
+  .menu__text {
+    margin-right: 16px;
+    font-size: 1.3rem;
   }
 
   .landing__img {
-    margin-top: 56px;
+    margin-top: 64px;
+    width: 100vw;
+  }
+
+  .line__black {
+    display: none;
+  }
+
+  .landing__link {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    height: 55px;
+    left: 16px;
+    right: 16px;
+    top: 354px;
+    font-size: 1.2rem;
+    background: #0c0c0c;
+    color: #fff;
   }
 }

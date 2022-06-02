@@ -1,0 +1,9 @@
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.testimonial__wrapper {
+  width: 100%;
+}
