@@ -95,16 +95,19 @@ input[type='email'],
 @media screen and (max-width: 768px) {
   .contact__container {
     flex-direction: column;
+    padding: 0 1rem;
     height: 100%;
     width: 100%;
   }
 
   .heading__container {
+    margin-top: 2rem;
     width: inherit;
   }
 
   .contact__heading {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    margin-top: ;
     margin-left: 0;
     text-align: center;
   }
@@ -122,7 +125,6 @@ input[type='email'],
   .input__group {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: nowrap; */
     height: 10%;
   }
   .form__input,
@@ -135,5 +137,10 @@ input[type='email'],
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
+  }
+
+  .form__btn {
+    width: 154px;
+    height: 55px;
   }
 }
