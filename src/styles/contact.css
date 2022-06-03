@@ -2,9 +2,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  margin: 0 4rem;
   height: 649px;
-  width: 80%;
+  width: 100%;
+}
+
+.heading__container {
+  padding: 0 2rem;
+  width: 57%;
 }
 
 .contact__heading {
@@ -13,13 +18,15 @@
   justify-self: flex-start;
   text-transform: uppercase;
   text-align: left;
+  margin-left: 6rem;
+  width: inherit;
 }
 
 .form__group {
   display: flex;
   flex-direction: column;
   margin: 2rem 1rem;
-  width: 942px;
+  width: 80%;
 }
 
 .input__container {
@@ -39,11 +46,6 @@
   all: unset;
   border-bottom: 2px solid #dddddd;
   margin-bottom: 2rem;
-  width: 80%;
-}
-
-.form__input.name,
-.form__input.email {
   width: 80%;
 }
 
@@ -78,4 +80,7 @@
   height: 85px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
 }
