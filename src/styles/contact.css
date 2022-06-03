@@ -39,7 +39,16 @@
   flex-direction: column;
   align-items: flex-start;
   flex-wrap: no-wrap;
+  height: 100%;
   width: 100%;
+}
+
+input[type='text'],
+input[type='email'],
+.form__input.message {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 2rem;
 }
 
 .form__input {
@@ -58,6 +67,7 @@
 
 .input__label {
   font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .input__label.massage {
@@ -83,4 +93,47 @@
 }
 
 @media screen and (max-width: 768px) {
+  .contact__container {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  .heading__container {
+    width: inherit;
+  }
+
+  .contact__heading {
+    font-size: 2.2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+  .form__group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: inherit;
+    height: inherit;
+  }
+
+  .input__container {
+    flex-wrap: wrap;
+  }
+
+  .input__group {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    height: 10%;
+  }
+  .form__input,
+  .message__group {
+    width: inherit;
+  }
+
+  .input__label {
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
 }
