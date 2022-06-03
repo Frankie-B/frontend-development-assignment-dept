@@ -1,46 +1,119 @@
 .footer__container {
-  border: 1px solid red;
   background: #0c0c0c;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 325px;
-  width: 80%;
+  height: 380px;
+  position: relative;
+  right: 5%;
+  bottom: 0;
+  width: 95%;
 }
 
 .nav__footer {
   display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
   color: #fff;
   display: flex;
+  height: 90px;
   width: 96%;
 }
 
 .nav__items {
+  cursor: pointer;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: 'Teko', Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-left: 4rem;
   height: 100px;
-  width: inherit;
+  width: 30%;
+}
+
+.footer__logo {
+  width: 150px;
+  height: 42px;
+}
+
+.socials__container {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  height: 100px;
+  width: 30%;
+}
+
+i.lni {
+  margin-left: 1rem;
 }
 
 .grey__line {
   border-bottom: 1px solid #e3e3e3;
   transform: matrix(1, 0, 0, 1, 0, 0);
   opacity: 0.2;
-  width: 96%;
+  width: 95%;
 }
 
 .info__container {
+  color: #808080;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
   width: inherit;
-  padding-top: 2rem;
-  padding-bottom: 50px;
+  height: 100px;
+  width: 96%;
+}
+
+.heading__group {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.info__heading {
+  font-size: 1rem;
+}
+
+.info__heading:not(:first-child) {
+  margin-left: 3rem;
 }
 
 .info__heading.copyright {
+  flex: 1;
+  justify-self: flex-end;
+}
+
+.btt__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: -116px;
+  bottom: 183px;
+}
+
+.arrow__image {
+  width: 56px;
+  height: 60px;
+}
+
+.btt__heading {
+  color: #1a18f7;
+  font-family: 'Tecko' sans-serif;
+  font-size: 2.3rem;
+  /* font-weight: 600; */
+  z-index: 3;
 }
 
 @media screen and (max-width: 768px) {
