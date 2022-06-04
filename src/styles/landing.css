@@ -25,7 +25,6 @@
   right: 64px;
   top: 49px;
   transform: translate(-50%, -50%);
-
 }
 
 .menu__text {
@@ -58,6 +57,10 @@
   position: absolute;
   top: 85.25px;
   width: 1762px;
+}
+
+.hero__container {
+  position: relative;
 }
 
 .landing__link {

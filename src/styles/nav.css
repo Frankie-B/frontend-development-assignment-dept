@@ -60,10 +60,7 @@
   width: 100%;
 }
 
-.link__item {
-  color: #fff;
-}
-
+.link__item,
 .link__item:hover {
   color: #fff;
 }
@@ -125,5 +122,34 @@
 }
 
 @media screen and (max-width: 768px) {
-  /* things */
+  .nav__container {
+    width: 100vw;
+  }
+  .countries__container {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .networks__container {
+    visibility: hidden;
+    opacity: ;
+    :0 ;
+  }
+
+  .dropdown__container {
+  }
+
+  .nav__item.link {
+    font-size: 3.4rem;
+  }
+
+  .nav__container::after {
+    all: unset;
+  }
+  .nav__list.pages {
+    top: 4rem;
+  }
+  .nav__item.link {
+    width: 100%;
+  }
 }
