@@ -1,0 +1,129 @@
+.nav__container {
+  position: relative;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.nav__container::after {
+  content: '';
+  background: linear-gradient(343.1deg, #000000 11.49%, rgba(0, 0, 0, 0) 84.4%);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 40px;
+  width: 100%;
+  z-index: 1;
+}
+
+.dropdown__container {
+  background: #0c0c0c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+
+  overflow-y: auto;
+  height: 837px;
+  width: inherit;
+}
+
+.nav__list.countries {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 130px;
+}
+
+.nav__right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.nav__list.pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: inherit;
+  overflow-y: scroll;
+  position: absolute;
+  top: 13rem;
+  right: 2rem;
+  width: inherit;
+}
+
+.page {
+  width: 100%;
+}
+
+.link__item {
+  color: #fff;
+}
+
+.link__item:hover {
+  color: #fff;
+}
+
+.nav__item.link {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid #fff;
+  text-align: right;
+  font-size: 6rem;
+  padding: 2rem 0;
+  width: 95%;
+}
+
+.countries__container {
+  margin-top: 8rem;
+  padding-left: 2rem;
+  width: 107px;
+  height: 168px;
+}
+
+.countries__heading {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  text-align: left;
+  width: 100%;
+}
+
+.nav__item.country {
+  background: #0c0c0c;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 0.7rem;
+}
+
+.link__item.country {
+  background: #0c0c0c;
+}
+
+.networks__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: -30px;
+  right: 46%;
+  text-align: left;
+  padding-left: 2rem;
+  width: 60%;
+  height: 176px;
+}
+
+@media screen and (max-width: 768px) {
+  /* things */
+}
