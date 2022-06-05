@@ -29,12 +29,13 @@
         <img src="./images/logo-black.svg" alt="logo image" class="logo__img">
         <div class="navIcon__container">
           <h3 class="menu__text">Menu</h3>
-          <div class="line__container">
-            <span class="navIcon__line"></span>
-            <span class="navIcon__line"></span>
+          <div class="menu-btn">
+            <div class="menu-btn__burger top"></div>
+            <div class="menu-btn__burger bottom"></div>
           </div>
         </div>
-        <nav class="dropdown__container">
+        <nav class="dropdown__container" id="dropDownMenu">
+          <img src="./images/close.svg" alt="" class="close" id="closeMenu">
           <img src="./images/logo__white.svg" alt="logo image" class="logo__img white">
           <div class="countries__container">
             <h4 class="countries__heading">Countries</h4>
@@ -68,7 +69,6 @@
                 <li class="social__link"><a href="" class="link__item social__link">Linkin</a></li>
               </ul>
             </ul>
-            <div class="nav__gradient"></div>
           </div>
         </nav>
       </header>
@@ -356,19 +356,19 @@
           <label for="message" class="input__label massage">Message</label>
           <textarea name="" id="" cols="30" rows="10" class="form__input message"></textarea>
         </div>
-        <button type="submit" class="form__btn">Send</button>
+        <button type="submit" id="btnSubmit" class="form__btn">Send</button>
       </form>
     </section>
     <footer class="footer__container">
       <nav class="nav__footer">
         <img src="./images/logo__white.svg" alt="" class="footer__logo">
         <ul class="nav__items">
-          <li class="nav__link">Work</li>
-          <li class="nav__link">Services</li>
-          <li class="nav__link">Stories</li>
-          <li class="nav__link">About</li>
-          <li class="nav__link">Careers</li>
-          <li class="nav__link">Contact</li>
+          <li class="nav__link"><a href="#" class="info__link">Work</a></li>
+          <li class="nav__link"><a href="#" class="info__link">Services</a></li>
+          <li class="nav__link"><a href="#" class="info__link">Stories</a></li>
+          <li class="nav__link"><a href="#" class="info__link">About</a></li>
+          <li class="nav__link"><a href="#" class="info__link">Careers</a></li>
+          <li class="nav__link"><a href="#" class="info__link">Contact</a></li>
         </ul>
         <div class="socials__container">
           <i class="lni lni-facebook-filled"></i>
@@ -385,7 +385,7 @@
         </div>
         <h3 class="info__heading copyright">© 2018 Dept Agency</h3>
       </div>
-      <div class="btt__container">
+      <div class="btt__container" id="scrollToTop">
         <img src="./images/arrow-up.svg" alt="" class="arrow__image">
         <span class="btt__heading">Top</span>
       </div>

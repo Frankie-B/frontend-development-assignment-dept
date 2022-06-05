@@ -94,6 +94,34 @@ i.lni {
   justify-self: flex-end;
 }
 
+.info__link {
+  color: #fff;
+  position: relative;
+}
+
+.info__link:hover {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.info__link::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.info__link:hover::before {
+  transform: scaleX(1);
+}
+
 .btt__container {
   display: flex;
   flex-direction: column;
@@ -103,6 +131,10 @@ i.lni {
   position: absolute;
   right: -116px;
   bottom: 183px;
+}
+
+.btt__container:hover {
+  cursor: pointer;
 }
 
 .arrow__image {
@@ -170,7 +202,6 @@ i.lni {
   }
 
   .info__container {
-    border: 1px solid red;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
@@ -180,7 +211,6 @@ i.lni {
   }
 
   .heading__group {
-    border: 1px solid red;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;

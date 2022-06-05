@@ -90,6 +90,8 @@ input[type='email'],
   height: 85px;
   text-transform: uppercase;
   text-decoration: none;
+  scale: 0.9;
+  will-change: transform;
 }
 
 @media screen and (max-width: 768px) {

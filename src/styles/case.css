@@ -88,7 +88,12 @@
   font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
   width: 100%;
+}
+
+.case__link:hover {
+  color: blue;
 }
 
 .arrow_left {
