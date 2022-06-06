@@ -8,7 +8,7 @@ My assessment is with a visual focus.
 
 ## Demo
 
-https://venomous-chairs.surge.sh/
+https://frontend-assignment-dept.surge.sh/
 
 ## Run Locally
 
